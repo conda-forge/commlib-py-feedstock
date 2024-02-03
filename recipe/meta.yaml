@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/robotics-4-all/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: 6c3c675645bb15e995529c8ba55150f556beb4f3b915094638193dacb1ae6bb3
+    sha256: 651d9e720ab16c3761d65d1fd2252d330259637b6dea7d28c5a7c8e25a99b612
 
 build:
   noarch: python
