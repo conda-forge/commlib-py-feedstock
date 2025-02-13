@@ -1,0 +1,5 @@
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -13,1 +13,1 @@
+-hiredis = "2.1.1"
++hiredis = "2.2.3"
