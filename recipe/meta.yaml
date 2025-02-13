@@ -8,6 +8,8 @@ package:
 source:
   - url: https://github.com/robotics-4-all/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
     sha256: 2e7c7bf962d1ddc1f7349240d87703084d58762d2bebbe6082344783c9d466c9
+    patches:
+      - fix-requirements.patch
 
 build:
   noarch: python
@@ -20,7 +22,7 @@ requirements:
     - poetry-core
     - python {{ python_min }}
   run:
-    - hiredis
+    - hiredis ==2.2.3
     - redis-py >=5.0.1
     - rich >=13.7.0
     - paho-mqtt <2.0.0
