@@ -46,7 +46,6 @@ about:
   summary: "Internal DSL for communication and messaging in CyberPhysical Systems"
   license: MIT
   license_file:
-    - LICENSE.txt
     - LICENSE
 
 extra:
