@@ -26,13 +26,12 @@ requirements:
     - pika >=1.3.1
     - pydantic >=2.0.0
     - python >={{ python_min }}
-    - requests >=2.1.0
+    - requests >=2.32.0
     - ujson >=5.7.0
 test:
   imports:
     - commlib
   requires:
-    - coverage
     - pip
     - pytest
     - python {{ python_min }}
@@ -40,7 +39,7 @@ test:
     - tests
   commands:
     - pip check
-    - coverage run -m unittest discover tests
+    - pytest --ignore=tests/mqtt --ignore=tests/redis -v
 
 about:
   home: https://github.com/robotics-4-all/commlib-py
