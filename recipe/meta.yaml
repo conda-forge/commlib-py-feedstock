@@ -1,5 +1,5 @@
 {% set name = "commlib-py" %}
-{% set version = "0.13.0" %}
+{% set version = "0.13.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/robotics-4-all/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: a4cf9ffb8391f0495a877a20e72f9d6b230fa3517f7a243f5119fe9f37fc53fb
+    sha256: fbf30144ef79c84bde417a6af3910acd01a08f926e85fd181d5a3372e74ad1d5
 
 build:
   noarch: python
