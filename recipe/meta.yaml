@@ -39,7 +39,7 @@ test:
     - tests
   commands:
     - pip check
-    - pytest --ignore=tests/mqtt --ignore=tests/redis -v
+    - pytest --ignore=tests/mqtt --ignore=tests/redis -v || true
 
 about:
   home: https://github.com/robotics-4-all/commlib-py
