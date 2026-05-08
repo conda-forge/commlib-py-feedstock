@@ -32,6 +32,10 @@ requirements:
 test:
   imports:
     - commlib
+    - commlib.node
+    - commlib.serializer
+    - commlib.endpoints
+    - commlib.transports
   requires:
     - pip
     - pytest
